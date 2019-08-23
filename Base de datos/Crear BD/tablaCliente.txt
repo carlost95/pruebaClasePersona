@@ -1,0 +1,16 @@
+CREATE TABLE `santo_domigo_corralon`.`cliente` (
+  `clienteId` INT (11) NOT NULL AUTO_INCREMENT,
+  `clienteNombre` VARCHAR (100) NOT NULL,
+  `clienteApellido` VARCHAR (100) NOT NULL,
+  `clienteDni` VARCHAR (100) NOT NULL,
+  `clienteHabilitacion` TINYINT NOT NULL DEFAULT 1,
+  `clienteFechaAlta` DATETIME NOT NULL,
+  `clienteFechaActualizacion` DATETIME NOT NULL,
+  `clienteFechaBaja` DATETIME,
+  PRIMARY KEY (`clienteId`),
+  INDEX `IX_clienteNombre` (`clienteNombre`),
+  INDEX `IX_clienteApellido` (`clienteApellido`),
+  UNIQUE INDEX `IX_clienteDni` (`clienteDni`),
+  INDEX `IX_clienteFechaAlta` (`clienteFechaAlta`)
+) ENGINE = INNODB CHARSET = utf8;
+

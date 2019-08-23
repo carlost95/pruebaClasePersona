@@ -1,0 +1,17 @@
+ALTER TABLE `santo_domigo_corralon`.`direccion`
+  ADD COLUMN `clienteId` INT (11) NULL AFTER `direccionFechaBaja`,
+  ADD COLUMN `distritoId` INT (11) NULL AFTER `clienteId`,
+  ADD COLUMN `tipoDireccionId` INT (11) NULL AFTER `distritoId`,
+  ADD FOREIGN KEY (`clienteId`) REFERENCES `santo_domigo_corralon`.`cliente` (`clienteId`),
+  ADD FOREIGN KEY (`distritoId`) REFERENCES `santo_domigo_corralon`.`distrito` (`distritoId`),
+  ADD FOREIGN KEY (`tipoDireccionId`) REFERENCES `santo_domigo_corralon`.`tipodireccion` (`tipoDireccionId`);
+
+
+# Relacion Departamento distrito
+
+ALTER TABLE `santo_domigo_corralon`.`distrito`
+  ADD COLUMN `departamentoId` INT (11) NULL AFTER `distritoFechaBaja`,
+  ADD FOREIGN KEY (`departamentoId`) REFERENCES `santo_domigo_corralon`.`departamento` (`departamentoId`);
+
+
+

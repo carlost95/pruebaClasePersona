@@ -1,0 +1,5 @@
+ALTER TABLE `santo_domigo_corralon`.`direccion`
+  ADD COLUMN `direccionFechaAlta` DATETIME NOT NULL AFTER `direccionDescripcion`,
+  ADD COLUMN `direccionFechaActualizacion` DATETIME NOT NULL AFTER `direccionFechaAlta`,
+  ADD COLUMN `direccionFechaBaja` DATETIME NULL AFTER `direccionFechaActualizacion`;
+

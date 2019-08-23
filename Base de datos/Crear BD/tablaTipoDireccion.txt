@@ -1,0 +1,12 @@
+CREATE TABLE `santo_domigo_corralon`.`tipoDireccion` (
+  `tipoDireccionId` INT (11) NOT NULL AUTO_INCREMENT,
+  `tipoDireccionNombre` VARCHAR (100) NOT NULL,
+  `tipoDireccionAbreviatura` VARCHAR (100) NOT NULL,
+  `tipoDireccionFechaAlta` DATETIME NOT NULL,
+  `tipoDireccionFechaActualizacion` DATETIME NOT NULL,
+  `tipoDireccionFechaBaja` DATETIME,
+  PRIMARY KEY (`tipoDireccionId`),
+  INDEX `IX_tipoDireccionNombre` (`tipoDireccionNombre`),
+  INDEX `IX_tipoDireccionAbreviatura` (`tipoDireccionAbreviatura`)
+) ENGINE = INNODB CHARSET = utf8;
+
