@@ -1,0 +1,16 @@
+CREATE TABLE `santo_domingo_corralon`.`direcciones` (
+  `id` INT (11) NOT NULL AUTO_INCREMENT,
+  `calle` VARCHAR (100) NOT NULL,
+  `numerocalle` VARCHAR (100) NOT NULL,
+  `barrio` VARCHAR (100) NOT NULL,
+  `entrecalles` VARCHAR (100),
+  `descripcion` VARCHAR (100),
+  PRIMARY KEY (`id`),
+  INDEX `IX_calle` (`calle`),
+  INDEX `IX_barrio` (`barrio`)
+) CHARSET = utf8;
+
+ALTER TABLE `santo_domingo_corralon`.`direcciones`
+  ADD COLUMN `fechaalta` DATETIME NOT NULL AFTER `descripcion`,
+  ADD COLUMN `fechaactualizacion` DATETIME NOT NULL AFTER `fechaalta`,
+  ADD COLUMN `fechabaja` DATETIME NULL AFTER `fechaactualizacion`;
