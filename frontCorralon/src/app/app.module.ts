@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { ClienteModule } from './cliente/cliente.module';
 import { DireccionModule } from './direccion/direccion.module';
 import { DepartamentoModule } from './departamento/departamento.module';
@@ -23,6 +24,8 @@ import { ReportesModule } from './reportes/reportes.module';
 import { VentasComponent } from './ventas/ventas.component';
 
 
+=======
+>>>>>>> parent of 4af4976... Back y front
 =======
 >>>>>>> parent of 4af4976... Back y front
 =======
