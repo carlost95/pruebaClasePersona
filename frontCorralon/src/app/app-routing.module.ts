@@ -1,4 +1,6 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 import { ListarDireccionComponent } from './direccion/listar-direccion/listar-direccion.component';
 import { ListarDistritoComponent } from './distrito/listar-distrito/listar-distrito.component';
 
@@ -26,6 +28,20 @@ const routes: Routes = [
   {path: 'navbar-reportes', component: NavbarReportesComponent},
   {path: 'navbar-logistica', component: NavbarLogisticaComponent}
   ];
+=======
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+
+const routes: Routes = [];
+>>>>>>> parent of 4af4976... Back y front
+=======
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+
+const routes: Routes = [];
+>>>>>>> parent of 4af4976... Back y front
 =======
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
