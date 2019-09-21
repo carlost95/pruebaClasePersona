@@ -1,10 +1,35 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'frontCorralon';
+  title = 'CORRALON';
+
+  constructor(private router: Router) {}
+
+  ventas() {
+    this.router.navigate(['navbar-ventas']);
+  }
+
+  compras() {
+    this.router.navigate(['navbar-compras']);
+  }
+  seguridad() {
+    this.router.navigate(['navbar-seguridad']);
+  }
+  logistica() {
+    this.router.navigate(['navbar-logistica']);
+  }
+  reportes() {
+    this.router.navigate(['navbar-reportes']);
+  }
+
+  consultarUrl(url:string){
+    return this.router.url;
+  }
 }
