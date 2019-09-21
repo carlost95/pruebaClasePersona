@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-
 export class AppComponent {
+<<<<<<< HEAD
   title = 'CORRALON';
   constructor(private router: Router) {}
 
@@ -29,4 +28,7 @@ export class AppComponent {
   }
 
 
+=======
+  title = 'frontCorralon';
+>>>>>>> parent of 4af4976... Back y front
 }
