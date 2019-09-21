@@ -3,24 +3,6 @@
         <!--<div class="card-header">
             <h3>Clientes</h3>
         </div>-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="navbar-brand" (click)="cliente()">Cliente</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="navbar-brand" (click)="direccion()">Direccion </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="navbar-brand" (click)="distrito()">Distritos </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="navbar-brand" (click)="departamento()">Departamentos </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
 
         <div class="card-body">
             <div class="row">
@@ -97,64 +79,5 @@
             </table>
         </div>
 
-        <!--
-
-
-        <div class="card-body">
-            <table class="table table-hover">
-                <thead>
-                    <div class="row">
-                        <tr>
-                            <td>
-                                <button class="btn btn-default">NOMBRES </button>
-                            </td>
-                            <td>
-                                <input type="text" class="form-control" placeholder="ingrese nombre" (keyup)="filtrarClientes(event)">
-                            </td>
-                            <td>
-                                <button class="btn btn-default">APELLIDOS </button>
-                            </td>
-                            <td>
-                                <input type="text" class="form-control" placeholder="ingrese busquda" (keyup)="filtrarClientes(event)">
-                            </td>
-                            <td>
-                                <button (click)="nuevoCliente(cliente)" class="btn btn-success" style="margin-left: 50px;">NUEVO CLIENTE</button>
-                            </td>
-                        </tr>
-
-                    </div>
-                    <div>
-                        <tr class="text-center">
-                            <th>ID</th>
-                            <th>NOMBRE</th>
-                            <th>APELLIDO</th>
-                            <th>DNI</th>
-                            <th>HABILITACION</th>
-                        </tr>
-                    </div>
-
-                </thead>
-                <tbody *ngIf="clientes != null">
-        <div>
-            <tbody *ngIf="clientes !=null">
-                <tr *ngFor="let cliente of clientes" class="text-center">
-
-                    <td>{{cliente.id}}</td>
-                    <td>{{cliente.nombre}}</td>
-                    <td>{{cliente.apellido}}</td>
-                    <td>{{cliente.dni}}</td>
-                    <td>{{cliente.habilitacion}}</td>
-
-                    <td>
-                        <button (click)="editar(cliente)" class="btn btn-warning">Editar</button>
-                        <button (click)="eliminar(cliente) " class="btn btn-danger " style="margin-left: 10px; ">Eliminar</button>
-                    </td>
-                </tr>
-
-            </tbody>
-        </div>
-        </table>
-    </div>
-    -->
     </div>
 </div>

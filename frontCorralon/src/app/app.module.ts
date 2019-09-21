@@ -18,12 +18,13 @@ import { ComprasModule } from './compras/compras.module';
 import { SeguridadModule } from './seguridad/seguridad.module';
 import { LogisticaModule } from './logistica/logistica.module';
 import { ReportesModule } from './reportes/reportes.module';
+import { VentasComponent } from './ventas/ventas.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, VentasComponent
   ],
   imports: [
     BrowserModule,

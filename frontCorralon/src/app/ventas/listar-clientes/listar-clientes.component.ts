@@ -1,6 +1,6 @@
-import { ServiceService } from './../../service/service.service';
+import { ServiceService } from '../../service/service.service';
 import { Router } from '@angular/router';
-import { Cliente } from './../../modelo/Cliente';
+import { Cliente } from '../../modelo/Cliente';
 import { Component, OnInit } from '@angular/core';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 

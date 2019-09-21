@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { ClienteRoutingModule } from './cliente-routing.module';
 import {FormsModule} from '@angular/forms';
-import { ListarClientesComponent } from './listar-clientes/listar-clientes.component';
-import { AgregarClientesComponent } from './agregar-clientes/agregar-clientes.component';
-import { EliminarClientesComponent } from './eliminar-clientes/eliminar-clientes.component';
-import { ModificarClientesComponent } from './modificar-clientes/modificar-clientes.component';
+import { ListarClientesComponent } from '../ventas/listar-clientes/listar-clientes.component';
+import { AgregarClientesComponent } from '../ventas/agregar-clientes/agregar-clientes.component';
+import { EliminarClientesComponent } from '../ventas/eliminar-clientes/eliminar-clientes.component';
+import { ModificarClientesComponent } from '../ventas/modificar-clientes/modificar-clientes.component';
 
 
 

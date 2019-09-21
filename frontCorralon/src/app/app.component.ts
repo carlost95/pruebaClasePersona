@@ -9,11 +9,10 @@ import { Router } from '@angular/router';
 
 export class AppComponent {
   title = 'CORRALON';
-
   constructor(private router: Router) {}
 
   ventas() {
-    this.router.navigate(['navbar-ventas']);
+    this.router.navigate(['ventas']);
   }
 
   compras() {
@@ -29,7 +28,5 @@ export class AppComponent {
     this.router.navigate(['navbar-reportes']);
   }
 
-  consultarUrl(url:string){
-    return this.router.url;
-  }
+
 }

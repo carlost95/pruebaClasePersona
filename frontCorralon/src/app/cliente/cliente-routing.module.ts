@@ -1,4 +1,4 @@
-import { AgregarClientesComponent } from './agregar-clientes/agregar-clientes.component';
+import { AgregarClientesComponent } from '../ventas/agregar-clientes/agregar-clientes.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
